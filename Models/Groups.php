@@ -33,6 +33,15 @@
             return $this->getConnexion()->query('SELECT * FROM si_groups
                                                  WHERE id = "'.(int)$id.'"')->fetch();
         }
+
+        public function addGroup($name){
+
+            $sql = "INSERT INTO si_groups ('name') values ($name)";
+
+            $stmt = $this->getConnexion()->prepare($sql);
+
+            return $stmt->execute();
+        }
     }
 
 ?>

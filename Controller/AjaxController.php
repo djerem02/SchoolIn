@@ -1,7 +1,9 @@
 <?php
 
 include_once('../Models/Notes.php');
+include_once('../Models/Groups.php');
 $objNote = new Notes();
+$objGroup = new Groups();
 
 if($_POST['method'] && $_POST['method'] == 'getNotes'):
 
@@ -29,6 +31,10 @@ elseif($_POST['method'] && $_POST['method'] == 'save-note'):
 
 
     endif;
+
+elseif($_POST['method'] && $_POST['method'] == 'addGroup'):
+
+    $objGroup->addGroup($_POST['groupName']);
 
 endif;
 
