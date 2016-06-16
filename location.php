@@ -503,24 +503,10 @@
 
 
 
-            <?php
-            if(!$fp = fopen("http://www.zappos.com/nike-free-run-black-victory-green-anthracite-white?zlfid=111" ,"r" )) {
-                return false; }
-            //our fopen is right, so let's go
-            $content = "";
-            while(!feof($fp)) {
-                //while it is not the last line, we will add the current line to our $content
-                $content .= fgets($fp, 1024);
-            }
-            fclose($fp);
-            // //we are done here, don't need the main source anymore
-            preg_match_all("/([$][0-9]*[,]*[.][0-9]{2})/", $content, $prices, PREG_SET_ORDER);
-            echo $prices[0][0]."";
-            ?>
     </main>
 </div>
 
-<a target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect blue mdl-color-text--white">Chat</a>
+<?php include('chat.php');?>
 <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>
@@ -542,5 +528,6 @@
         $(this).closest("div").fadeOut();
     })
 </script>
+<script src="js/search/search.js"></script>
 </body>
 </html>

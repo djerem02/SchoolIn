@@ -74,9 +74,9 @@
             <h3>Yes We Code</h3><br/>
 
             <div class="row" >
-                <div class="pull-left col-md-3" >
+                <div class="pull-left col-md-4" >
                     <div class="panel panel-default">
-                        <div class="panel-body">
+                        <div class="panel-body logo">
                             <img src="images/yes-we-code.png" width="150px"/>
                         </div>
                     </div>
@@ -92,7 +92,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="pull-left col-md-3" >
+                <div class="pull-left col-md-4" >
                     <div class="panel panel-default">
                         <div class="panel-body">
                             <a data-widget="itineraire" href="#itineraire-widget" class="btn  blue" style="display:block;margin:auto," data-toggle="modal">
@@ -101,7 +101,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="pull-left col-md-3" >
+                <div class="pull-left col-md-4" >
                     <div class="panel panel-default">
                         <div class="panel-body">
                             <a class="btn  blue" style="display:block;margin:auto;" data-toggle="modal">
@@ -115,30 +115,27 @@
 
             <div class="row" >
 
-                <div class="col-md-2" >
+                <div class="col-md-4" >
                     <div class=" panel panel-default ">
                         <div class="panel-heading">Domaine d'activité</div>
                         <div class="panel-body">Développement Web</div>
                     </div>
-                </div>
-
-                <div class="col-md-2" >
                     <div class=" panel panel-default ">
                         <div class="panel-heading">Métiers de l'entreprise</div>
                         <div class="panel-body"><ul><li>Chef de projet Web</li><li>Designer</li><li>Développeur</li></div>
                     </div>
                 </div>
 
-                <div class="col-md-4" >
+                <div class="col-md-8" >
                     <div class=" panel panel-default ">
                         <div class="panel-heading">Annonces</div>
                         <div class="panel-body">"Recherche étudiant Bac +2 minimum développement web (stage)"</div>
                     </div>
                 </div>
-                <div class="col-md-4" >
+                <div class="col-md-8" >
                     <div class=" panel panel-default ">
                         <div class="panel-heading">Commentaires</div>
-                        <div class="panel-body">"Je garde un super souvenir de ce stage dans cette entreprise" <a>Marine</a></div>
+                        <div class="panel-body">"Des cours toujours à la pointe ! "<br/><a href="profil.php">Christian</a></div>
                     </div>
                 </div>
 
@@ -177,6 +174,6 @@
     })();
 </script>
 <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
-
+<script src="js/search/search.js"></script>
 </body>
 </html>

@@ -70,22 +70,33 @@
 
         <main class="mdl-layout__content mdl-color--grey-100">
 
-            <div class="mdl-grid demo-content sky" >
-                <a target="_blank" id="edit" class="edit mdl-button mdl-js-button mdl-button--raised   mdl-color-text--white blue">Modifier</a>
+            <div class="mdl-grid demo-content sky bleu" >
+                <!--<a target="_blank" id="edit" class="edit mdl-button mdl-js-button mdl-button--raised   mdl-color-text--white blue">Modifier</a>
                 <a target="_blank" id="save" class="save mdl-button mdl-js-button mdl-button--raised   mdl-color-text--white blue " style="display: none;">Sauvegarder</a>
+                -->
+
+                <div class="row" >
+                    <div col-md-6 style="display: inline-block;">
+                        <h3>Pierre Delacourt</h3>
+                        <h4>pierre.delacourt@gmail.com</h4><br/>
+                    </div>
 
 
-                <h3>Pierre Delacourt</h3><br/>
-                <h3>pierre.delacourt@gmail.com</h3><br/>
+                    <div class="demo-card-image mdl-card mdl-shadow--2dp col-md-6" style="display: inline-block;float: right;width: 200px;">
+                        <div class="mdl-card__title mdl-card--expand"></div>
+                        <div class="mdl-card__actions">
+                            <span class="demo-card-image__filename">Votre photo</span>
+                        </div>
+                    </div>
+                </div>
+
 
                 <div class="tag">
             <div class="chip"><a href="group.php">CCM</a><i class="material-icons close">close</i></div>
             <div class="chip"><a href="group.php">M1</a><i class="material-icons close">close</i></div>
-            <div class="chip"><a href="group.php">Insset</a><i class="material-icons close">close</i></div>
+            <div class="chip"><a href="group.php">Insset</a><i class="material-icons close">close</i></div><div class="chip"><a href="group.php">Football</a><i class="material-icons close">close</i></div>
+                    <div class="chip"><input id="tag"  placeholder="..."/><i class="material-icons close">close</i></div>
 
-        </div>
-                <div class="tag">
-            <div class="chip"><a href="group.php">Football</a><i class="material-icons close">close</i></div>
         </div>
 
                 <hr/>
@@ -124,15 +135,15 @@
                         <div class="content-wrap">
                             <section id="section-shape-1">
                                 <div class="panel panel-default ">
-                                    <div class="panel-heading"><i class="material-icons">work</i>Expérience</div>
+                                    <div class="panel-heading"><i class="material-icons">work</i> Expérience</div>
                                     <div class="panel-body">
-                                        <p>. a obtenu un CDI dans l'entreprise <a class="bleu" href="espacepro.php">Yes-We-Code</a></p>
+                                        <p>est en stage (3mois) dans l'entreprise <a class="bleu" href="espacepro.php">Yes-We-Code</a></p>
                                     </div>
                                 </div>
 
                                 <div class="panel panel-default  ">
-                                    <div class="panel-heading"><i class="material-icons">school</i>Formation</div>
-                                    <div class="panel-body"><p>. a été acceptée en M2 Cloud Computing&Mobility à l'<a href="formation.php">INSSET</a></p></div>
+                                    <div class="panel-heading"><i class="material-icons">school</i> Formation</div>
+                                    <div class="panel-body"><p>a été acceptée en M2 Cloud Computing&Mobility à l'<a href="formation.php">INSSET</a></p></div>
                                 </div></section>
 
                             <section id="section-shape-2"><p>2</p></section>
@@ -149,17 +160,7 @@
         </main>
     </div>
 
-    <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-        <a class="btn-floating btn-large gold">
-            <i class="large material-icons">mode_edit</i>
-        </a>
-        <ul>
-            <li><a class="btn-floating sky"><i class="material-icons">insert_chart</i></a></li>
-            <li><a class="btn-floating blue "><i class="material-icons">format_quote</i></a></li>
-            <li><a class="btn-floating white"><i class="material-icons">publish</i></a></li>
-            <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
-        </ul>
-    </div>
+    <?php include('chat.php');?>
     <!--JAVASCRIPT-->
         <!--JQUERY-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -169,6 +170,9 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
         <!--Tabs-->
         <script src="js/tabs/cbpFWTabs.js"></script>
+        <!--Search-->
+        <script type="text/javascript" src="js/search/classie.js"></script>
+        <script src="js/search/search.js"></script>
         <script>
         (function() {
 
@@ -199,5 +203,15 @@
         $(this).closest("div").fadeOut();
     })
 </script>
+  <script>
+      $("#tag").keyup(function(e){
+          if(e.keyCode == 13) { // KeyCode de la touche entrée
+              value=$(this).val();
+              $('.tag').prepend("<div class='chip'><a href='group.php'>"+value+"</a><i class='material-icons close'>close</i></div>");
+              $(this).val("");
+          }
+
+      });
+  </script>
 </body>
 </html>
