@@ -66,14 +66,32 @@
     <?php
     include ('header.php');
     include ('nav.php');
+    include_once('Models/Notes.php');
+    $objNotes = new Notes();
+
+    $notes = $objNotes->getAll();
     ?>
 
     <main class="mdl-layout__content mdl-color--grey-100">
 
-        <div class="mdl-grid demo-content sky" >
+      <div class="row mdl-grid demo-content sky" >
+          <div class="col-lg-6 view-note">
+                Cliquer sur une note
+          </div>
+          <div class="col-lg-6">
+            <table class="table table-hover">
+                <?php
+                    foreach($notes as $note):
+                      echo'<tr>
+                              <td id="note_'.$note['id'].'">'.$note['title'].'</td>
+                              <td>'.$note['date_upd'].'</td>
+                          </tr>';
+                    endforeach;
+                ?>
+            </table>
+          </div>
 
-
-        </div>
+      </div>
     </main>
 </div>
 
@@ -90,7 +108,7 @@
 </div>
 <!--JAVASCRIPT-->
 <!--JQUERY-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 <!--BOOTSTRAP-->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <!--Materialize -->
@@ -107,6 +125,7 @@
     })();
 </script>
 <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+<script src="js/notes.js"></script>
 
 <script>
     $(".edit").click(function(){
