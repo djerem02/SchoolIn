@@ -1,0 +1,89 @@
+.sky{
+    background-color: #d9edff !important;
+}
+
+.blue{
+    background-color: #6d9eeb !important;
+
+}
+
+.gold{
+    background-color: #daa520 !important;
+}
+
+.ciel{color:#d9edff !important;}
+.bleu{color:#6d9eeb !important;}
+.or{color:#daa520 !important;}
+
+.pointer{
+    cursor: pointer;
+}
+
+body{
+    background-color: #d9edff;
+}
+main{
+    background-color: #d9edff;
+}
+header{
+    background-color: #d9edff;
+}
+
+nav{
+    background-color: #d9edff;
+    overflow: hidden;
+}
+
+
+
+h3{
+    color:#6d9eeb;
+}
+hr{
+    color:#6d9eeb;
+    background-color:#6d9eeb ;
+}
+a{  color:#6d9eeb;cursor: pointer  }
+a:hover{
+    color:#daa520 ;
+    text-decoration: none;
+}
+
+.mdl-badge[data-badge]:after{
+    background: #daa520;
+}
+
+.demo-layout .demo-navigation .mdl-navigation__link{
+    padding-bottom: 0;
+}
+
+.chip{
+    background-color: #fff;
+    border: solid 1px #6d9eeb;
+}
+
+.mdl-grid{
+    display: block;
+}
+
+.tabs{
+    display: block;
+    height: 100%;
+}
+
+.content-wrap section p {
+    font-size: inherit;
+    color: inherit;
+    font-weight:inherit;
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 601px) {
+    nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+        height: 40px;
+        line-height: 0px;
+    }
+}
