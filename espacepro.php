@@ -132,10 +132,17 @@
                         <div class="panel-body">"Recherche étudiant Bac +2 minimum développement web (stage)"</div>
                     </div>
                 </div>
+
                 <div class="col-md-8" >
                     <div class=" panel panel-default ">
                         <div class="panel-heading">Commentaires</div>
-                        <div class="panel-body">"Des cours toujours à la pointe ! "<br/><a href="profil.php">Christian</a></div>
+                        <div class="panel-body ">
+                            <div class="com">
+                                <span>"Je garde un super souvenir de ce stage dans cette entreprise"</span><br/><a>Marine</a>
+                            </div>
+                            <div class="moncom" ><hr/><span class="montxt"></span><br/><a>Pierre</a></div>
+
+                        </div>
                     </div>
                 </div>
 
