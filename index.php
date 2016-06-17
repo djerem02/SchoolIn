@@ -33,15 +33,19 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.cyan-light_blue.min.css">
-  <link rel="stylesheet" href="mdl/material.css">
 
+  <link rel="stylesheet" href="mdl/material.css">
 
   <link rel="stylesheet" href="css/_panels.scss">
 
   <!--Materialize-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
 
-
+  <!--Windy-->
+  <link rel="stylesheet" type="text/css" href="css/windy.css" />
+  <link rel="stylesheet" type="text/css" href="css/style1.css" />
+  <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+  <noscript><link rel="stylesheet" type="text/css" href="css/noJS.css" /></noscript>
 
   <!--Bootstrap-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -53,7 +57,8 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="mdl/material.css">
   <link rel="stylesheet" href="css/schoolin.css">
-  
+
+
   <style>
     #view-source {
       position: fixed;
@@ -79,14 +84,20 @@
     <div class="mdl-grid demo-content sky" >
       <h3>Le monde étudiant aujourd'hui...</h3>
       <div class="row">
-        <article class="col-md-8">
-            Evénement sur votre ville étudiante !
+        <article class="col-md-8 windy-demo ">
+
+            <?php include('bloc_event.php') ?>
+
         </article>
         <aside class="col-md-4">
-          <h4><i class="material-icons">thumb_up</i>Bons plans</h4>
+          <h4><i class="material-icons">thumb_up</i> Bons plans</h4>
             <div class=" panel panel-default ">
-              <div class="panel-heading">Cinéma Saint-Quentin</div>
-              <div class="panel-body">7€ l'entrée étudiante !</div>
+              <div class="panel-heading  blue">Cinéma Cinéquai Saint-Quentin</div>
+              <div class="panel-body">7€ la place avec votre carte étudiante !</div>
+            </div>
+            <div class=" panel panel-default ">
+              <div class="panel-heading  blue">Yann Coiffure Saint-Quentin</div>
+              <div class="panel-body">Tarif réduit pour les étudiants</div>
             </div>
         </aside>
       </div>
@@ -96,7 +107,7 @@
   </main>
 </div>
 
-<a target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect blue mdl-color-text--white">Chat</a>
+<?php include('chat.php');?>
 
 <!--JAVASCRIPT-->
 <!--JQUERY-->
@@ -105,6 +116,14 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <!--Materialize -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+
+<!--Search-->
+<script type="text/javascript" src="js/search/classie.js"></script>
+<script src="js/search/search.js"></script>
+
+<!--Event-->
+<script type="text/javascript" src="js/jquery.windy.js"></script>
+<script type="text/javascript" src="js/event.js"></script>
 
 <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
 
@@ -127,5 +146,7 @@
     $(this).closest("div").fadeOut();
   })
 </script>
+
+
 </body>
 </html>

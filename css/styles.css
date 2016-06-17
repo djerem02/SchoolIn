@@ -110,8 +110,8 @@ html, body {
     text-decoration: none;
 }
 .demo-layout .demo-navigation .mdl-navigation__link:hover {
-    background-color: #d9edff;
-    color:#daa520;
+    background-color: #d9edff !important;
+    color:#daa520 !important;
 }
 .demo-navigation .mdl-navigation__link .material-icons {
   font-size: 24px;
@@ -244,3 +244,4 @@ _:-ms-input-placeholder, :root .demo-graph {
     display: block;
 
 }
+
