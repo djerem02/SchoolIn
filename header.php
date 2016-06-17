@@ -11,9 +11,9 @@
         <div class="morphsearch-content">
             <div class="dummy-column">
                 <h2>Etudiants</h2>
-                <a class="dummy-media-object" href="http://twitter.com/rachsmithtweets">
+                <a class="dummy-media-object" href="profil.php">
                     <img class="round" src="http://0.gravatar.com/avatar/48959f453dffdb6236f4b33eb8e9f4b7?s=50&d=identicon&r=G" alt="Rachel Smith"/>
-                    <h3>Rachel Smith</h3>
+                    <h3>Marine Froment</h3>
                 </a>
                 <a class="dummy-media-object" href="http://www.twitter.com/peterfinlan">
                     <img class="round" src="http://0.gravatar.com/avatar/06458359cb9e370d7c15bf6329e5facb?s=50&d=identicon&r=G" alt="Peter Finlan"/>
@@ -34,7 +34,7 @@
             </div>
             <div class="dummy-column">
                 <h2>Entreprises</h2>
-                <a class="dummy-media-object" href="http://tympanus.net/codrops/2014/08/05/page-preloading-effect/">
+                <a class="dummy-media-object" href="espacepro.php">
                     <img src="images/yes-we-code.png" alt="PagePreloadingEffect"/>
                     <h3>Yes We Code</h3>
                 </a>

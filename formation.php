@@ -129,7 +129,11 @@
                 <div class="col-md-4" >
                     <div class=" panel panel-default ">
                         <div class="panel-heading">Commentaires</div>
-                        <div class="panel-body">"Des cours toujours à la pointe ! "<br/><a href="profil.php">Christian</a></div>
+                        <div class="panel-body">
+                        <div class="com">
+                            <span>"Des cours toujours à la pointe ! "</span><br/><a href="profil.php">Christian Leuyam</a>
+                        </div>
+                        <div class="moncom" ><hr/><span class="montxt"></span><br/><a>Pierre Delacourt</a></div>
                     </div>
                 </div>
                 </div>
@@ -228,6 +232,7 @@
         mycom='"'+$('#mycom').val()+'"';
         $('.montxt').text(mycom);
         $('.moncom').fadeIn();
+        $('#profil').attr("data-badge","1")
     });
 </script>
 <script>
