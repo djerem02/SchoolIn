@@ -92,10 +92,20 @@
 
 
                 <div class="tag">
-            <div class="chip"><a href="group.php">CCM</a><i class="material-icons close">close</i></div>
-            <div class="chip"><a href="group.php">M1</a><i class="material-icons close">close</i></div>
-            <div class="chip"><a href="group.php">Insset</a><i class="material-icons close">close</i></div><div class="chip"><a href="group.php">Football</a><i class="material-icons close">close</i></div>
-                    <div class="chip"><input id="tag"  placeholder="..."/><i class="material-icons close">close</i></div>
+                  <?php
+                  include_once('Models/groups.php');
+                  $objGroup = new Groups();
+
+                  $groups = $objGroup->getAll();
+
+                  foreach($groups as $group):
+                      echo '<div class="chip"><a href="group.php">'.$group['name'].'</a><i class="material-icons close">close</i></div>';
+                  endforeach;
+                  ?>
+                <!--div class="chip"><a href="group.php">CCM</a><i class="material-icons close">close</i></div>
+                <div class="chip"><a href="group.php">M1</a><i class="material-icons close">close</i></div>
+                <div class="chip"><a href="group.php">Insset</a><i class="material-icons close">close</i></div><div class="chip"><a href="group.php">Football</a><i class="material-icons close">close</i></div-->
+                <div class="chip"><input id="tag"  placeholder="..."/><i class="material-icons close">close</i></div>
 
         </div>
 
