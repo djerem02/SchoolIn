@@ -6,7 +6,7 @@
 
         public function __construct()
         {
-            $this->cnx = new PDO('mysql:host=localhost;dbname=SchoolIn', 'root', '');
+            $this->cnx = new PDO('mysql:host=localhost;dbname=SchoolIn', 'root', 'root');
         }
 
         public function getConnexion()

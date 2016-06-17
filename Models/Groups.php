@@ -36,11 +36,13 @@
 
         public function addGroup($name){
 
-            $sql = "INSERT INTO si_groups ('name') values ($name)";
+          $sql = "INSERT INTO si_groups (name) VALUES (:name)";
 
-            $stmt = $this->getConnexion()->prepare($sql);
+          $stmt = $this->getConnexion()->prepare($sql);
 
-            return $stmt->execute();
+          $stmt->bindParam(':name', $name);
+
+          return $stmt->execute();
         }
     }
 

@@ -49,30 +49,4 @@ $(document ).ready(function()
             });
         });
 
-
-      /*$("#save-note").click(function(){
-          alert('oui');
-            var id_note = $('#id_note').val();
-
-            $.ajax({
-                type: "POST",
-                url: 'Controller/AjaxController.php',
-                data:{
-                    ajax :1,
-                    id_note : id_note,
-                    text_note : $("#text_note").val(),
-                    method: 'save-note'
-                },
-                success:function(res)
-                {
-                    if(res)
-                    {
-                        $('.view-note').html('<div class="alert alert-success"><strong>Bravo !</strong> Modification enregistrer.</div>')
-                    }
-
-                }
-
-            });
-
-      });*/
 });
