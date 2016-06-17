@@ -32,34 +32,34 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.cyan-light_blue.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/schoolin.css">
+    <link rel="stylesheet" href="mdl/material.css">
+
     <link rel="stylesheet" href="css/_panels.scss">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Compiled and minified CSS -->
+
+    <!--Materialize-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <!--Windy-->
+    <link rel="stylesheet" type="text/css" href="css/windy.css" />
+    <link rel="stylesheet" type="text/css" href="css/style1.css" />
+    <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+    <noscript><link rel="stylesheet" type="text/css" href="css/noJS.css" /></noscript>
 
-    <!-- Latest compiled and minified CSS -->
+    <!--Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-    <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
+    <!--Search-->
+    <link rel="stylesheet" type="text/css" href="css/search/component.css" />
 
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="mdl/material.css">
+    <link rel="stylesheet" href="css/schoolin.css">
 
     <!--Pin-->
-
     <link rel="stylesheet" type="text/css" href="css/pin/demo.css" />
     <link rel="stylesheet" type="text/css" href="css/pin/component.css" />
     <script src="js/pin/modernizr.custom.js"></script>
-
     <style>
         #view-source {
             position: fixed;
@@ -87,7 +87,7 @@
 
 
 
-            <h2>Logement étudiant</h2><br/>
+            <h3>Logement étudiant</h3><br/>
             <input placeholder="Où?"/>
             <input type="button" value="Rechercher"/>
 

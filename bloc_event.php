@@ -8,21 +8,10 @@
         <li><img src="images/demo1/7.jpg" alt="image7"/><h4>Dark Honor</h4><p>Chillwave mustache pinterest, marfa seitan umami id farm-to-table iphone.</p></li>
         <li><img src="images/demo1/8.jpg" alt="image8"/><h4>Nested Happiness</h4><p>Minim post-ironic banksy american apparel iphone wayfarers.</p></li>
         <li><img src="images/demo1/9.jpg" alt="image9"/><h4>Cherry Country</h4><p>Sint vinyl Austin street art odd future id trust fund, terry richardson cray.</p></li>
-        <li><img src="images/demo1/10.jpg" alt="image10"/><h4>Blossom Delight</h4><p>Craft beer gentrify nihil pariatur aliqua high life, irony cosby sweater.</p></li>
-        <li><img src="images/demo1/11.jpg" alt="image11"/><h4>Heartbeat</h4><p>Cliche vinyl consequat, carles wolf Austin williamsburg post-ironic mcsweeney's.</p></li>
-        <li><img src="images/demo1/12.jpg" alt="image12"/><h4>Inner Organs</h4><p>Deserunt reprehenderit pour-over marfa VHS occaecat, aesthetic belly DIY.</p></li>
-        <li><img src="images/demo1/13.jpg" alt="image13"/><h4>Wanted Darkness</h4><p>Organic irony incididunt blog retro, fanny pack nisi salvia.</p></li>
-        <li><img src="images/demo1/14.jpg" alt="image14"/><h4>Blessed Fever</h4><p>Twee biodiesel fugiat ut. Thundercats mcsweeney's occaecat brooklyn mollit.</p></li>
-        <li><img src="images/demo1/15.jpg" alt="image15"/><h4>Origins</h4><p>Quinoa marfa banksy nostrud brunch bushwick PBR. Mcsweeney's bushwick banksy.</p></li>
-        <li><img src="images/demo1/16.jpg" alt="image16"/><h4>Fire Lime</h4><p>Brunch fugiat locavore, swag photo booth keffiyeh labore small batch.</p></li>
-        <li><img src="images/demo1/17.jpg" alt="image17"/><h4>Host Rumor</h4><p>Helvetica wayfarers ea enim, street art you probably haven't heard of.</p></li>
-        <li><img src="images/demo1/18.jpg" alt="image18"/><h4>Lovely Feast</h4><p>Semiotics ennui VHS high life you probably haven't heard of them sed craft beer.</p></li>
-        <li><img src="images/demo1/19.jpg" alt="image19"/><h4>Red Greatness</h4><p>Cray 8-bit cliche, consequat VHS mumblecore salvia tattooed typewriter.</p></li>
-        <li><img src="images/demo1/20.jpg" alt="image20"/><h4>Hollow Soul</h4><p>Kale chips enim eiusmod narwhal, magna before they sold out locavore.</p></li>
-    </ul>
+ </ul>
     <nav>
 
-        <button  id="nav-prev" class="mdl-button blue mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+        <button  id="nav-next" class="mdl-button blue mdl-js-button mdl-button--fab mdl-js-ripple-effect">
             <i class="material-icons md-light">delete</i>
         </button>
         <button id="nav-next" class="mdl-button blue mdl-js-button mdl-button--fab mdl-js-ripple-effect">

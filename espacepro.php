@@ -138,7 +138,7 @@
                         <div class="panel-heading">Commentaires</div>
                         <div class="panel-body ">
                             <div class="com">
-                                <span>"Je garde un super souvenir de ce stage dans cette entreprise"</span><br/><a>Marine</a>
+                                <span>"Je garde un super souvenir de ce stage dans cette entreprise"</span><br/><a>Marine Froment</a>
                             </div>
                             <div class="moncom" ><hr/><span class="montxt"></span><br/><a>Pierre</a></div>
 
